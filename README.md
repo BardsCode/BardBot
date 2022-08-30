@@ -1,2 +1,10 @@
-# LolAccountVerification
-A library to verify the ownership of a League of Legend account to identify a discord user
+# BardBot WIP
+A multi-purpose Discord bot intented for self-hosting 
+
+## Features
+
+- Linking a member's League of legend and Discord Account (WIP) 
+    see leagueAccounts.js
+- Tournament management: Bracket generator & self-registration (WIP)
+    see tournament.js
+

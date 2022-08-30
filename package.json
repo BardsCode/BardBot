@@ -1,0 +1,26 @@
+{
+  "name": "bard",
+  "version": "1.0.0",
+  "description": "discord utility bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BardsCode/LolAccountVerification.git"
+  },
+  "keywords": [
+    "bard"
+  ],
+  "author": "bardscode",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/BardsCode/LolAccountVerification/issues"
+  },
+  "homepage": "https://github.com/BardsCode/LolAccountVerification#readme",
+  "dependencies": {
+    "discord.js": "^14.3.0",
+    "path": "^0.12.7"
+  }
+}

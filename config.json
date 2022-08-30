@@ -1,0 +1,48 @@
+{
+    "parameters": {
+        "levelRequirement": true,
+        "minimumLevel": 31,
+        "activityRequirement": true,
+        "maxInactivityDays": 60,
+        "verificationTimeout": 600000,
+        "profileIconId_1":{
+            "id":2,
+            "image":"icon1.png"
+        },
+        "profileIconId_2":{
+            "id": 13,
+            "image":"icon2.png"
+        }   
+    },
+
+    "logMessage": "Bot is Online",
+    "status": "online",
+    "activity": "discord.js",
+    "activityType": "WATCHING",
+
+    "embedAuthor": "Bardbot",
+    "embedColor": "#006284",
+    "embedIcon":"https://static.wikia.nocookie.net/leagueoflegends/images/c/cb/Bard_OriginalCircle.png/revision/latest/scale-to-width-down/48?cb=20171112085141",
+
+    "commandPrefix": "!",
+    "commands":{
+        "link":{
+            "usage": "link",
+            "arguments": "region playerName",
+            "description": "commence le processus de vérification de compte League of Legend",
+            "roleRequirement": false
+        },
+        "cancel":{
+            "usage": "cancel",
+            "arguments": "",
+            "description": "Annule une verification en cours",
+            "roleRequirement": false
+        },
+        "done":{
+            "usage": "done",
+            "arguments":"",
+            "description": "termine le processus de vérification de compte League of Legend",
+            "roleRequirement": false
+        }
+    }
+}
