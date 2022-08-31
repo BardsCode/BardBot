@@ -15,6 +15,7 @@ axios.defaults.headers.common['X-Riot-Token'] = process.env.RIOT_API_KEY;
 
 async function processMessage(message, client){
     if(message.author.bot) return;
+    if(!message.content.startsWith(config.commandPrefix)) return;
     if(message.guild === null){
         let processedMessage = message.content.toLowerCase().split(' ');
         switch(processedMessage[0]){
