@@ -1,0 +1,50 @@
+{
+    "adminRoleId":"984517611737989181",
+
+    "commandPrefix": "!",
+    "commands":{
+        "createTournament":{
+            "usage": "create",
+            "arguments": "tournamentName [playerLimit]",
+            "description": "Créer un tournois",
+            "roleRequirement": true
+        },
+        "startRegistration":{
+            "usage": "register",
+            "arguments": "",
+            "description": "Ouvre l'inscription au tounois dans un canal dédié",
+            "roleRequirement": true
+        },
+        "generateBracket":{
+            "usage": "bracket",
+            "arguments":"",
+            "description": "Ferme l'inscription au tournois et génère les brackets",
+            "roleRequirement": true
+        },
+        "stopTournament":{
+            "usage": "stop",
+            "arguments":"",
+            "description": "Ferme le tournois",
+            "roleRequirement": true
+        },
+        "forceWin":{
+            "usage": "forceWin",
+            "arguments":"@player",
+            "description": "force la victoire du joueur mentionné",
+            "roleRequirement": true
+        },
+        "winResult":{
+            "usage": "win",
+            "arguments":"",
+            "description": "annonce une victoire par le joueur utilisant la commande",
+            "roleRequirement": false
+        },
+        "looseResult":{
+            "usage": "lose",
+            "arguments":"",
+            "description": "annonce une défaite par le joueur utilisant la commande",
+            "roleRequirement": false
+        }
+        
+    }
+}

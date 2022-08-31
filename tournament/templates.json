@@ -1,0 +1,13 @@
+{
+    "OTP":{
+        "registrationParamRequirement":{
+            "championName":[
+                "aatrox",
+                "annie",
+                "azir",
+                "..."
+
+            ]
+        }
+    }
+}
