@@ -1,7 +1,10 @@
 const Discord = require('discord.js');
 const { Client, GatewayIntentBits, Partials } = require('discord.js');
 const leagueAccount = require("./leagueAccount.js");
+const tournament = require("./tournament/tournament.js");
 const config = require("./config.json");
+
+
 
 const client = new Discord.Client({
   intents: [
@@ -30,4 +33,5 @@ client.on('ready', async () =>{
 // messageCreates event listener
 client.on('messageCreate', async(message) => {
     leagueAccount.processMessage(message, client);
+    tournament.processMessage(message, client);
 });
