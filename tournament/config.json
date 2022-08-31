@@ -33,13 +33,13 @@
             "description": "force la victoire du joueur mentionné",
             "roleRequirement": true
         },
-        "winResult":{
+        "win":{
             "usage": "win",
             "arguments":"",
             "description": "annonce une victoire par le joueur utilisant la commande",
             "roleRequirement": false
         },
-        "looseResult":{
+        "lose":{
             "usage": "lose",
             "arguments":"",
             "description": "annonce une défaite par le joueur utilisant la commande",
