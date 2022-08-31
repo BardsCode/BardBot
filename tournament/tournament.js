@@ -9,6 +9,7 @@ module.exports.processMessage = processMessage;
 
 async function processMessage(message, client){
     if(message.author.bot) return;
+    if(message.guild === null) return;
     let hasEventAdminAuthorization;
     if(message.member.roles.cache.some(role => role.id === config.adminRoleId)){
         hasEventAdminAuthorization = true;

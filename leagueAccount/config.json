@@ -15,6 +15,13 @@
         }   
     },
 
+    "endpoint":{
+        "SUMMONER_EUW_ENDOINT":"https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/",
+        "SUMMONER_EUNE_ENDOINT":"https://eun1.api.riotgames.com/lol/summoner/v4/summoners/by-name/",
+        "SUMMONER_NA_ENDOINT":"https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/"
+    },
+    
+
     "logMessage": "Bot is Online",
     "status": "online",
     "activity": "discord.js",

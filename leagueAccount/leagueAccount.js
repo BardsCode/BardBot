@@ -55,15 +55,15 @@ async function initiateVerification(message, processedMessage){
     let region;
     switch(processedMessage[1]){
         case 'euw':
-            summonerEndpoint = process.env.SUMMONER_EUW_ENDOINT;
+            summonerEndpoint = config.endpoint.SUMMONER_EUW_ENDOINT;
             region = "EUW";
             break
         case 'eune':
-            summonerEndpoint = process.env.SUMMONER_EUNE_ENDOINT;
+            summonerEndpoint = config.endpoint.SUMMONER_EUNE_ENDOINT;
             region = "EUNE";
             break
         case 'na':
-            summonerEndpoint = process.env.SUMMONER_NA_ENDOINT;
+            summonerEndpoint = config.endpoint.SUMMONER_NA_ENDOINT;
             region = "NA";
             break
         default:
@@ -98,7 +98,7 @@ async function initiateVerification(message, processedMessage){
         userGuildId = message.author.id + "#" + guildId;
         pendingVerification.set(userGuildId, [account['name'], choosenIcon.id, summonerEndpoint]); 
 
-        message.channel.send({embeds: [embedMessage], files: [new Discord.AttachmentBuilder("./images/" + choosenIcon.image)] });
+        message.channel.send({embeds: [embedMessage], files: [new Discord.AttachmentBuilder("./leagueAccount/images/" + choosenIcon.image)] });
         console.log("icone demandé: " + choosenIcon.id);
         setTimeout(cancelVerification, config.parameters.verificationTimeout, userGuildId, message.channel);
         

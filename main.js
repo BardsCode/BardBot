@@ -1,9 +1,7 @@
 const Discord = require('discord.js');
 const { Client, GatewayIntentBits, Partials } = require('discord.js');
-const leagueAccount = require("./leagueAccount.js");
+const leagueAccount = require("./leagueAccount/leagueAccount.js");
 const tournament = require("./tournament/tournament.js");
-const config = require("./config.json");
-
 
 
 const client = new Discord.Client({
